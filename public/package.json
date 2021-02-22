@@ -1,0 +1,15 @@
+{
+  "name": "shoppers",
+  "version": "1.0.0",
+  "description": "African wear online store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "group",
+  "license": "ISC",
+  "dependencies": {
+    "mtn-momo": "^1.0.6",
+    "stripe": "^8.134.0"
+  }
+}

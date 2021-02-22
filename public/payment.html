@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Glorious Fashions &mdash; payment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="rola.js"></script>
+    <script src="newjs.js"></script> -->
+    <script src="store.js"></script>
+</head>
+
+<body>
+
+    <div class="site-wrap">
+        <header class="site-navbar" role="banner">
+            <div class="site-navbar-top">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        
+
+                        <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+                        <div class="site-logo">
+                            <span class="title">Glourious Fashions<sup><i>UG</i></s></span>
+                        </div>
+                        </div>
+                        
+                        <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+                             <div class="site-top-icons">
+                  <!-- <ul>
+                      <li><a href="index.html"><span class="log-in">LOGOUT</span></a></li>
+                     
+                  </ul> -->
+              </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <nav class="site-navigation text-right text-md-center navbar-toggler" role="navigation">
+                <div class="container">
+                    <ul class="site-menu js-clone-nav d-none d-md-block">
+                    
+                       <li> 
+                            <a href="login.html">Home</a>
+
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+
+                        </li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="payment.html">payment methods</a></li>
+                      
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="bg-light py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-0"><a href="login.html">Home</a> <span class="mx-2 mb-0">/</span> <strong
+                            class="text-black">Payment Methods</strong></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-section">
+            <div class="container">
+                <div class="row mb-5">
+                    
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                       
+                     
+                    </div>
+                    <div class="col-md-6 pl-5">
+                        <div class="row justify-content-end">
+                        
+                        <div id="smart-button-container">
+                            <div style="text-align: center;">
+                                <div id="paypal-button-container"></div>
+                            </div>
+                        </div>
+                        <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
+                            data-sdk-integration-source="button-factory"></script>
+                        <script>
+                            function initPayPalButton() {
+                                paypal.Buttons({
+                                    style: {
+                                        shape: 'rect',
+                                        color: 'gold',
+                                        layout: 'vertical',
+                                        label: 'paypal',
+
+                                    },
+
+                                    createOrder: function (data, actions) {
+                                        return actions.order.create({
+                                            purchase_units: [{ "amount": { "currency_code": "USD", "value": 20 } }]
+                                        });
+                                    },
+
+                                    onApprove: function (data, actions) {
+                                        return actions.order.capture().then(function (details) {
+                                            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                        });
+                                    },
+
+                                    onError: function (err) {
+                                        console.log(err);
+                                    }
+                                }).render('#paypal-button-container');
+                            }
+                            initPayPalButton();
+                        </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center> <div id="paypal-button"></div></center>
+    <footer class="site-footer border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="footer-heading mb-4">Navigations</h3>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Sell online</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Shopping cart</a></li>
+                                <li><a href="#">Store builder</a></li>
+                            </ul>
+                        </div>
+                        <!-- <div class="col-md-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><a href="#">Mobile commerce</a></li>
+                  <li><a href="#">Dropshipping</a></li>
+                  <li><a href="#">Website development</a></li>
+                </ul>
+              </div> -->
+                        <!-- <div class="col-md-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><a href="#">Point of sale</a></li>
+                  <li><a href="#">Hardware</a></li>
+                  <li><a href="#">Software</a></li>
+                </ul>
+              </div> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <h3 class="footer-heading mb-4">Promo</h3>
+                    <a href="#" class="block-6">
+                        <img src="images/couple.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
+                        <h3 class="font-weight-light  mb-0">Finding Your Perfect Fashion</h3>
+                        <p>Promo from febuary 15 &mdash; 25, 2021</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="block-5 mb-5">
+                        <h3 class="footer-heading mb-4">Contact Info</h3>
+                        <ul class="list-unstyled">
+                            <li class="address">Atalanta Building , Near cooper complex, Kampala, Uganda</li>
+                            <li class="phone"><a href="tel://256 703409132">+256 703409132</a></li>
+                            <li class="email">rosekb36@gmail.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="block-7">
+                        <form action="#" method="post">
+                            <label for="email_subscribe" class="footer-heading">Subscribe</label>
+                            <div class="form-group">
+                                <input type="text" class="form-control py-4" id="email_subscribe" placeholder="Email">
+                                <input type="submit" class="btn btn-sm btn-primary" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <p>
+                        Copyright &copy;All rights reserved | @Glourious Fashions
+                        <script>document.write(new Date().getFullYear());</script>
+                    <p> <b> <i>itgenius techCompanyUG</i> </b> </p>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AVdGfydkvAPvwJEh54uSWTkgoxcyNb7fZOefSXrUBLiA9AceX9Svz2wv406b-jXa57UQDW2kKjT-n7uV"></script>
+    <script>paypal.Buttons().render('#paypal-button');</script>
+    <script src="paypal.js"></script>
+
+</body>
+
+</html>

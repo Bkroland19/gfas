@@ -1,0 +1,53 @@
+{
+   
+   "items":[ {
+    
+"id":1,
+"name":"Men African   Blazer",
+"price ":20,
+"image":"./image/mensuit.png"
+    },
+     {
+"id":2,
+"name":"Ankara Men Blazer",
+"price":30,
+"image":"./image/men640-3.png"
+    },
+{
+"id":3,
+"name":"Ankara Shirt for Men",
+"price":40,
+"image":"./images/men640"
+},
+{
+"id":4,
+"name":"Women Mockup",
+"price":30,
+"image":"./images/women640"
+},
+{
+"id":5,
+"name":"Cortar",
+"price":30,
+"image":"./images/men640-1"
+},
+{
+"id":6,
+"name":"Women dresses",
+"price":30,
+"image":"./images/225"
+},
+{
+"id":7,
+"name":"Ankara Shirt",
+"price":40,
+"image":"./images/men6"
+},
+{
+"id":8,
+"nmae":"Atera Shirt",
+"price":40,
+"image":"./images/men5"
+}
+   ]
+}
